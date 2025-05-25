@@ -1,9 +1,9 @@
 ﻿
 namespace The_Old_Robot.Direction
 {
-    internal class EastCommand : RobotCommand
+    internal class EastCommand : IRobotCommand
     {
-        public override void Run(Robot Robot)
+        public void Run(Robot Robot)
         {
             if (Robot.IsPowered == true) Robot.X += 1;
         }

@@ -1,8 +1,8 @@
 ﻿namespace The_Old_Robot.Power
 {
-    internal class OnCommand : RobotCommand
+    internal class OnCommand : IRobotCommand
     {
-        public override void Run(Robot Robot) 
+        public void Run(Robot Robot) 
         {
             Robot.IsPowered = true;
         }

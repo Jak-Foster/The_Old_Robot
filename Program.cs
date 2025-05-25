@@ -12,7 +12,7 @@ internal class Program
 
         for (int I = -1; I++ < 2; )
         {
-            RobotCommand UserInput = Console.ReadLine() switch
+            IRobotCommand UserInput = Console.ReadLine() switch
             {
                 "On" => new OnCommand(),
                 "Off" => new OffCommand(),
