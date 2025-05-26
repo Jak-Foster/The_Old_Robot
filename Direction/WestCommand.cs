@@ -1,4 +1,5 @@
-﻿
+﻿using The_Old_Robot.Robotics;
+
 namespace The_Old_Robot.Direction
 {
     internal class WestCommand : IRobotCommand

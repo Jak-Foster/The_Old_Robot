@@ -1,4 +1,6 @@
-﻿namespace The_Old_Robot.Power
+﻿using The_Old_Robot.Robotics;
+
+namespace The_Old_Robot.Power
 {
     internal class OnCommand : IRobotCommand
     {
