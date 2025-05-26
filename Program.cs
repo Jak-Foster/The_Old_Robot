@@ -3,6 +3,7 @@ using The_Old_Robot.Power;
 using The_Old_Robot.Direction;
 using The_Old_Robot.Room_Coordinates;
 using The_Old_Robot.War_Preparations;
+using The_Old_Robot.Coloured_Items;
 
 internal class Program
 {
@@ -43,14 +44,23 @@ internal class Program
         //Console.WriteLine(Room5.IsAdjacent(Room1));
         //Console.WriteLine(Room3.IsAdjacent(Room3));
 
-        SwordRecord SwordOne = new(SwordMaterial.Iron, SwordGemstone.None, 10, 4);
-        SwordRecord SwordTwo = SwordOne with { SwordMaterial = SwordMaterial.Binarium, SwordGemstone = SwordGemstone.Bitstone };
-        SwordRecord SwordThree = SwordTwo with { SwordMaterial = SwordMaterial.Bronze, SwordLength = 15, CrossGuardWidth = 3 };
+        //SwordRecord SwordOne = new(SwordMaterial.Iron, SwordGemstone.None, 10, 4);
+        //SwordRecord SwordTwo = SwordOne with { SwordMaterial = SwordMaterial.Binarium, SwordGemstone = SwordGemstone.Bitstone };
+        //SwordRecord SwordThree = SwordTwo with { SwordMaterial = SwordMaterial.Bronze, SwordLength = 15, CrossGuardWidth = 3 };
 
-        Console.WriteLine(SwordOne);
-        Console.WriteLine(SwordTwo);
-        Console.WriteLine(SwordThree);
-        Console.WriteLine(SwordThree.SwordMaterial);    
+        //Console.WriteLine(SwordOne);
+        //Console.WriteLine(SwordTwo);
+        //Console.WriteLine(SwordThree);
+        //Console.WriteLine(SwordThree.SwordMaterial);    
 
+
+        ColouredItem<Sword> ColouredSword = new(new Sword(), ConsoleColor.Blue);
+        ColouredSword.Display();
+
+        ColouredItem<Bow> ColouredBow = new(new Bow(), ConsoleColor.Red);
+        ColouredBow.Display();
+
+        ColouredItem<Axe> ColouredAxe= new(new Axe(), ConsoleColor.Green);
+        ColouredAxe.Display();
     }
 }
